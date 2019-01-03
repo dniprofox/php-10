@@ -59,6 +59,43 @@ echo "<ol>";
 // }
 
 
+		 // function & switch case
+
+
+	echo "<br><br>";
+
+	function greeting( $userName="Гость",$weekDay) {
+
+		switch ($weekDay) {
+
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+
+					echo "Привет, $userName! Хорошего и продуктивного рабочего дня!";
+							break;
+
+				case '6':
+				case '7':
+
+					echo "Привет, $userName! Желаю вам хорошо отдохнуть в этот день!";
+							break;
+		
+				default:
+
+					echo "Привет, $userName!Наверное,уже пора в отпуск";
+							break;
+	}
+
+
+	}
+
+
+   greeting( "Дмитрий","3");
+
+
 
 
 ?>
